@@ -1,0 +1,18 @@
+{
+    "name": "choruspicks-Env",
+    "image": "choruspicks-env",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "appPort": [
+        "8000",
+        "8100",
+    ],
+    "extensions": [
+        "mikael.angular-beastcode",
+        "alexiv.vscode-angular2-files",
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "fivethree.vscode-ionic-snippets"
+    ],
+    "shutdownAction": "stopContainer",
+    "postCreateCommand": "yarn install"
+}
