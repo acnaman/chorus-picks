@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends
 RUN apt-get install -y git python procps yarn build-essential
 
 # install angular cli, ionic, firebase-tools
-RUN npm install -g @angular/cli@8.3.6
+RUN npm install -g @angular/cli@9.1.0
 
 # make work directory
 RUN mkdir /workspace
