@@ -1,0 +1,22 @@
+.tab-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    .card-item {
+        margin: 20px;
+        max-width: 200px;
+        height: 250px;
+    
+        img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        mat-card-content {
+            text-overflow: ellipsis;
+            height: 60px;
+            overflow: hidden;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<p class="tab-content">
+  タグ：{{tag}}
+  <mat-card *ngFor="let item of items" class="card-item">
+    <img *ngIf="item.img" mat-card-image src="{{item.img}}" />
+    <img *ngIf="!item.img" mat-card-image src="/assets/img/noimage.png" />
+    <mat-card-title>{{item.title}}</mat-card-title>
+    <mat-card-content>{{item.content}}</mat-card-content>
+  </mat-card>
+</p>
